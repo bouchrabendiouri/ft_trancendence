@@ -1,0 +1,46 @@
+
+    <div id = "divv">
+    <img  class="WELCOME" src = "IMAGES/WELCOME.png" >
+    <img class="TO-PING-PONG" src = "IMAGES/TO-PING-PONG.png">
+    <div id="sign_up" name="sign_up" class="sign_up" style="display: none">
+        <div class="BOXX" id="step1">
+            <h2 data-i18n="SIGN_UP_TITLE"><u>SIGN UP</u></h2>
+            <input class="input" type="email" id="email" placeholder="email" data-i18n_placeholder="email" required>
+            <input class="input" type="password" id="password" name="password" placeholder="Enter your password" data-i18n_placeholder="Enter_your_password" required>
+            <input class="input" type="password" id="confirm_password" name="password" placeholder="Confirm password" data-i18n_placeholder="confirm_password" required>
+            <button class="btn_sign" type="button" id="next" data-i18n="NEXT">NEXT</button>
+            <p>
+                <span data-i18n="have_account">Have already an account ?</span>
+                <u><a id="switch-to-sign-in" data-i18n="SIGN_IN">Sign in</a></u>
+            </p>
+            <p class="separator" data-i18n="OR">Or</p>
+            <a>
+                <img id="42" src="IMAGES/intra.png" alt="intra" style="cursor: pointer;" onclick="loginWith42()"></img>
+            </a>
+        </div>
+        <div class="BOXX" style="display: none" id="step2">
+            <input class="input_step2" id="first_name" placeholder="Enter first name" data-i18n_placeholder="Enter_first_name" required>
+            <input class="input_step2" id="last_name" placeholder="Enter last name" data-i18n_placeholder="Enter_last_name" required>
+            <input class="input_step2" id="nickname" placeholder="Choose nickname" data-i18n_placeholder="choose_nickname" required>
+            <label class="btn_sign" id="uploadimage" for="Uploadimage" data-i18n_placeholder="upload_image">Upload image</label>
+            <input id="Uploadimage" type="file" accept="file/*" style="display: none;" required>
+            <button class="btn_sign" id="sign_upp2"  data-i18n="SIGN_UP_TITLE" >SIGN UP</button>
+        </div>
+    </div>
+    <div class="sign_in" style="display: block;">
+        <div class="BOXX">
+            <h2 data-i18n="SIGN_IN_TITLE"><u>SIGN IN</u></h2>
+            <input class="input_signin" type="email" id="email_sign_in" placeholder="email" data-i18n_placeholder="email" required>
+            <input class="input_signin" type="password" id="password_login" placeholder="Enter your password" data-i18n_placeholder="Enter_your_password" required>
+            <button class="btn_sign" id="signin" data-route="/home" data-i18n="SIGN_IN_TITLE">SIGN IN</button>
+            <p>
+                <span data-i18n="no_account">Don't have an account?</span>
+                <u><a id="switch-to-sign-up" data-i18n="SIGN_UP">Sign up</a></u>
+            </p>
+            <p id="separator" data-i18n="OR">Or</p>
+            <a>
+                <img id="42" src="IMAGES/intra.png" alt="intra"   style="cursor: pointer;" onclick="loginWith42()"></img>
+            </a>
+        </div>
+    </div>   
+</div>

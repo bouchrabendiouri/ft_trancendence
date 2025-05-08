@@ -1,0 +1,32 @@
+
+
+    <!-- Side Box -->
+    <div id="pendingGamesContainer" class="side-box">
+    </div>
+
+    <!-- Ping Pong Table -->
+    <div class="ping-pong-table_remote">
+        <div class="net"></div>
+        <div class="paddle left-paddle"></div>
+        <div class="paddle right-paddle"></div>
+        <div class="ball"></div>
+        <!-- <div id="gameOver" class="game-over hidden">Game Over</div> -->
+    </div>
+    <div class="button-container">
+        <button id="createGameButton" class="play-button no-blur">Create Game</button>
+    </div>
+    
+   <!-- Score Selection Modal -->
+<!-- Score Selection Modal -->
+<div class="modal-general_" id="scoreModal">
+    <div class="ENTERZ_SCORE" id="ENTERZ_SCORE">
+        <h2>Select Match Score</h2>
+        <p>Choose the score to finish the match:</p>
+        <input type="number" id="matchScore" placeholder="Enter score" min="1" max="50">
+        <p id="errorMessage" style="color: red; font-size: 10px; display: none;">Please enter a valid score between 1 and 13.</p>
+        <div>
+            <button id="confirmScore">Confirm</button>
+            <button class="cancel-button" id="cancelScore">Cancel</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,388 @@
+
+#about-page 
+{
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 2vh;
+    font-size: 1.2em;
+}
+
+#header 
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #45046b, #7727b8, #a00d87, #230fda, #1a1a72);
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    height: 30vh;
+    border-radius: 150px 15px 150px 15px; 
+}
+
+header h1
+{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header img
+{
+    margin-top: -4%;
+     max-width: 100%;
+     height: auto;
+     text-align: center;
+}
+
+section 
+{
+    margin: 10px;
+}
+
+h1 
+{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #9714d4;
+    text-decoration: underline;
+}
+
+#game-story 
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    /* width: 50%; */
+}
+
+#game-story img 
+{
+    max-width: 100%;
+    border-radius: 10px;
+    width: auto;
+    width: 50%;
+}
+
+#game-story .story-content 
+{
+    flex: 1;
+}
+
+#How-TO-play .how-to-play
+{
+    flex: 1;
+}
+#How-TO-play
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-bottom: 3vh;
+
+}
+
+#How-TO-play img 
+{
+    /* flex: 1; */
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+ .how-to-play 
+{
+    background-color: #ededf7;
+   
+    box-shadow: 5px 5px 20px #d5d4e4;
+    color: rgb(5, 5, 5);
+    padding: 20px;
+    /* width: 50%; */
+    border-radius: 10px;
+}
+
+.how-to-play h2 
+{
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff00f5;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e000d3;
+}
+
+#team {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap:wrap;
+    color: rgb(5, 5, 5);
+}
+
+.team-member 
+{
+    background-color: #fff;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(170, 60, 243, 0.959);
+}
+
+.team-member:hover {
+    transform: scale(1.2); 
+}
+.team-member img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #1a1a72;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.next_title {
+    animation: zoom 2s ease-out forwards;
+    animation-iteration-count: infinite;
+    margin-top: -4%; 
+}
+
+/* For small devices (phones) */
+@media screen and (max-width: 480px) {
+
+    #about-page {
+        max-width: 90vw;
+        margin-top: 2%;
+        font-size: 1em;
+    }
+    #header {
+        height: 40vh;
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #game-story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #game-story img {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    #game-story .story-content {
+        margin-top: 20px;
+    }
+
+    #How-TO-play {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-to-play {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #How-TO-play img {
+        width: 90%;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* For medium devices (tablets) */
+@media screen and (max-width: 768px) {
+
+    #about-page {
+        max-width: 85vw;
+        margin-top: 4%;
+    }
+
+    #header {
+        height: 35vh;
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    #game-story {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #game-story img {
+        width: 80%;
+        max-width: 60%;
+    }
+
+    .team-member {
+        flex: 1 1 45%;
+    }
+
+    .team-member img {
+        width: 90px;
+        height: 90px;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
+
+/* For small devices (phones) */
+@media screen and (max-width: 480px) {
+
+    #about-page {
+        max-width: 90vw;
+        margin-top: 2%;
+        font-size: 1em;
+    }
+
+    #header {
+        height: 40vh;
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #game-story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #game-story img {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    #game-story .story-content {
+        margin-top: 20px;
+    }
+
+    #How-TO-play {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-to-play {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #How-TO-play img {
+        width: 90%;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* For medium devices (tablets) */
+@media screen and (max-width: 768px) {
+
+    #about-page {
+        max-width: 85vw;
+        margin-top: 4%;
+    }
+
+    #header {
+        height: 35vh;
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    #game-story {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #game-story img {
+        width: 80%;
+        max-width: 60%;
+    }
+
+    .team-member {
+        flex: 1 1 45%;
+    }
+
+    .team-member img {
+        width: 90px;
+        height: 90px;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}

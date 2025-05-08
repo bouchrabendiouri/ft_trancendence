@@ -1,0 +1,106 @@
+
+<div class="first_part"><img class="first_img" src="IMAGES/IMAGE.png"><img class="first2_img" src="IMAGES/imagee.png">
+  </div>  
+  <div id="first_line_profile">
+    <div class="profile_info">
+    <img id="profile_page_profile" >
+    </div>
+</div>
+<div id="info_user">
+   <div id="your_summary">
+      <!-- <h1 id="stats_dashboard">Game Stats Dashboard</h1> -->
+      <div class="game_stats">
+          <div class="stat_item">
+              <h4 data-i18n="MATCHES">MATCHES</h4>   
+          </div>
+          <div class="stat_item">
+              <h4 data-i18n="WINS">WINS</h4>
+          </div>
+          <div class="stat_item">
+              <h4 data-i18n="LOSSES" >LOSSES</h4>
+          </div>
+      </div>
+  </div>
+    <div id="score_level">
+    <div id = "level_user"><div class="stats_score_level"><p id="Level" data-i18n="Your_Level">LEVEL:</p> <div id ="btn_score"><div id ="btn_score_2"></div></div></div></div>
+    <div id = "score_user"><div class="stats_score_level"><p id="Score" data-i18n="Your_Score">SCORE:</p></div></div>
+   
+</div>
+
+</div>
+<div class="middle_2">
+   
+<div class="middle">
+ <img class = "game_for" src ="IMAGES/GAME-FOR-THE-GAMERS.png">
+ <p data-i18n="Game_text">
+    Dive into the excitement today! Master the game in just a few minutes, 
+    or team up with your friends for endless fun and thrilling competition! Whether you’re a newcomer or a seasoned player, 
+    there’s always something new to explore. Challenge yourself, strategize, 
+    and rise to the top of the leaderboard as you discover fresh ways to win!
+</p>
+<div id="buttuns">
+<button class = "Btns" id = "invite" data-i18n="INVITE YOUR FRIENDS" type="button" class="btn btn-primary" onclick="navigateTo('/users')"> INVITE YOUR FRIENDS</button>
+    <button class = "Btns" id="invite2" data-i18n="HOW TO PLAY" type="button" class="btn btn-primary" > HOW TO PLAY !</button>
+</div>
+</div>
+ <div id="animation-imgs"> <img class = "mmg1" src ="IMAGES/mmg1.png"> <img class = "mmg2" src ="IMAGES/mmg2.png"> <img class = "mmg3" src ="IMAGES/mmg3.png"></div>
+</div>
+ <img id = "play_of_the_week" src = "IMAGES/PLAYERS-OF-THE-WEEK.png">
+ <div class = "BOX_rank">
+    <!-- <div class="no-rankings" style="display: none;"> -->
+        <p  class="no-history" id="no_rankss" data-i18n="no_rankings">No rankings available.</p>
+    <!-- </div> -->
+    <!-- <div class = "box_rank"> <img class="imojji" src="IMAGES/profile-selection3.png"><p class = "names"> <em>Noni lahmar</em></p> 
+       <div class ="INFO"> <p class = "Level_skill_points" data-i18n="Level"> LEVEL :</p> <p class = "score"> 8.71 </p></div> 
+       <div class ="INFO"> <p class = "Level_skill_points" data-i18n="SKILLS POINTS"> SKILLS POINTS : </p><p class = "score"> 7</p></div>
+       <button id="view_profile" data-i18n="view_profile" type="button" class="btn btn-primary">view profile</button>
+    </div>
+    <div  class = "box_rank" id = "box_first_rank"> <img class="imojji" src="IMAGES/profile-selection2.png" > <img id="icone" src="IMAGES/icon.png" > <p class = "names"><em>Houda akoumi</em></p>
+        <div class ="INFO"> <p class = "Level_skill_points" data-i18n="Level" > LEVEL :</p> <p class = "score"> 8.90</p></div> 
+        <div class ="INFO"> <p class = "Level_skill_points" data-i18n="SKILLS POINTS" > SKILLS POINTS : </p><p class = "score"> 10 </p></div>
+        <button id="view_profile" data-i18n="view_profile" type="button" class="btn btn-primary">view profile</button>
+    </div>
+    <div class = "box_rank"><img class="imojji" src="IMAGES/profile-selection1.png" ><p class = "names"><em>Imane Khallal</em></p>
+        <div class ="INFO"> <p class = "Level_skill_points" data-i18n="Level"> LEVEL :</p> <p class = "score"> 8.76 </p></div> 
+        <div class ="INFO"> <p class = "Level_skill_points" data-i18n="SKILLS POINTS" > SKILLS POINTS : </p><p class = "score"> 8 </p></div>
+        <button id="view_profile" data-i18n="view_profile" type="button" class="btn btn-primary">view profile</button>
+    </div> -->
+ </div>
+
+<div class="container_how_to_play" style="display: none;">
+  <div class="how_to_play">
+     <span class="hiddin">&times;</span>
+     <h1 data-i18n="how_to_play">How to Play Ping Pong</h1>
+
+     <div class="how_to_play_content">
+         <h2 data-i18n="game_instructions">Game Instructions</h2>
+     
+         <div class="steps">
+             <h3 data-i18n="serving_step">1. Serving</h3>
+             <p data-i18n="serving_text">To serve, toss the ball up and hit it so it bounces on your side and then crosses the net.</p>
+         </div>
+     
+         <div class="steps">
+             <h3 data-i18n="moving_paddle_step">2. Moving the Paddle</h3>
+             <p data-i18n="moving_paddle_text">Use the arrow keys (left and right) to move your paddle and return the ball.</p>
+         </div>
+     
+         <div class="steps">
+             <h3 data-i18n="scoring_step">3. Scoring</h3>
+             <p data-i18n="scoring_text">Score when the opponent misses the ball. The game is played to 11 points.</p>
+         </div>
+     
+         <!-- <div class="steps">
+             <h3 data-i18n="energy_skill_points_step">Energy & Skill Points</h3>
+             <p data-i18n="energy_skill_points_text">Start with 100 Energy and 5 Skill Points. Use Skill Points to upgrade your paddle and skills during the game.</p>
+         </div> -->
+     
+         <div class="cta">
+             <a href="#start_game" onclick="navigateTo('/game')" data-i18n="start_game_link">Click here to start playing</a>
+         </div>
+     </div>
+     
+         </div>
+     </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+FROM python:3.10
+
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /code
+
+COPY requirements.txt .
+
+RUN apt-get update && \
+    apt-get install -y gcc libyaml-dev build-essential netcat-openbsd --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+COPY . .
+
+EXPOSE 8002
+
+CMD sh -c "sleep 10 && \
+           python3 manage.py makemigrations && \
+           python3 manage.py migrate && \
+           python3 manage.py shell -c \"from django.contrib.auth.models import User; User.objects.create_superuser('testuser', 'admin@example.com', '456') if not User.objects.filter(username='testuser').exists() else None\" && \
+           python3 manage.py runserver 0.0.0.0:8002"

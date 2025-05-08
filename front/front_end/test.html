@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Progress System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1A1A72;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .level-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 350px;
+        }
+
+        .level {
+            font-size: 18px;
+            font-weight: bold;
+            color: white; /* No background */
+        }
+
+        .progress-bar {
+            position: relative;
+            width: 250px;
+            height: 15px;
+            background-color: white; /* Base white bar */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background: #00FF00; /* Green progress */
+            transition: width 0.5s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .progress-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 8px 15px;
+            background: #FF00F5;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="level-container">
+            <span class="level" id="level_display">Level 1</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress_fill"></div>
+                <div class="progress-text" id="progress_text">0%</div>
+            </div>
+        </div>
+        <button class="btn" onclick="increaseLevel()">Increase Level</button>
+    </div>
+
+    <script>
+        let level = 1;
+
+        function updateLevelDisplay() {
+            const progressFill = document.getElementById('progress_fill');
+            const progressText = document.getElementById('progress_text');
+            const levelDisplay = document.getElementById('level_display');
+
+            // Calculate width based on level (max 100%)
+            let width = Math.min(100, (level / 10) * 100);
+            
+            // Update bar width and text
+            progressFill.style.width = `${width}%`;
+            progressText.textContent = `${width}%`;
+
+            // Update Level Text
+            levelDisplay.textContent = `Level ${level}`;
+        }
+
+        function increaseLevel() {
+            if (level < 10) {
+                level++;
+                updateLevelDisplay();
+            }
+        }
+
+        // Initialize display
+        updateLevelDisplay();
+    </script>
+
+</body>
+</html>

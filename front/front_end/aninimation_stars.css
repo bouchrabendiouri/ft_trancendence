@@ -1,0 +1,92 @@
+#stars
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+
+@keyframes movement_images1 {
+    0% {
+        background-color: #dc5690;
+        transform: translateX(0) translateY(0);
+        z-index: 0;
+    }
+
+    50% {
+        background-color: #7a0bd4;
+        transform: translateX(100%) translateY(-4%) scale(1);
+        z-index: 2;
+    }
+
+    100% {
+        background-color: #7a0bd4;
+        transform: translateX(200%) translateY(0);
+        z-index: 0;
+    }
+}
+
+@keyframes movement_images2 {
+    0% {
+        background-color: #229fbe;
+        transform: translateX(0) translateY(-4%) scale(1);
+        z-index: 2;
+    }
+
+    50% {
+        background-color: #9a0493;
+        transform: translateX(-100%) translateY(0);
+        z-index: 0;
+    }
+
+    100% {
+        background-color: #9a0493;
+        transform: translateX(0z) translateY(0) scale(1); 
+        z-index: 0;
+    }
+}
+
+@keyframes movement_images3 {
+    0% {
+        background-color: #a2ec33;
+    }
+
+    50% {
+        background-color: #ee5637;
+    }
+
+    100% {
+        background-color: #531daa;
+        transform: translateX(-100%) translateY(-4%) scale(1);
+        z-index: 2;
+    }
+}
+
+@keyframes movement_stars
+{
+    0% 
+    {
+        transform: translateX(0vw);
+    }
+    10%
+    {
+        transform: translateX(1vw);
+    }
+    30%
+    {
+        transform: translateX(-1vw);
+    }
+    50%
+    {
+        transform: translateY(1vh);
+    }
+    70%
+    {
+        transform: translateX(-1vh);
+    }
+    100%
+    {
+        transform: translateX(0vw);
+    }
+}
+

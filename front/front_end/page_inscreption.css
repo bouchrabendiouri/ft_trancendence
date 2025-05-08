@@ -1,0 +1,309 @@
+#divv 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    color: #fff;
+    margin-top: 3vh;
+    position: relative;
+}
+
+.WELCOME 
+{
+    width: 20%;
+}
+
+.TO-PING-PONG 
+{
+    width: 30%;
+}
+
+.GAME 
+{
+    width: 15%;
+}
+
+.BOXX 
+{
+    width: 35vw;
+    height: 65vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #050580;
+    border-radius: 30px;
+    margin-top: 4vh;
+    animation: light-border 5s infinite linear;
+}
+
+.BOXX h2 
+{
+    color: #EC5DC4;
+    font-family: 'Press Start 2P', monospace;    
+}
+u
+{
+    color: #EC5DC4;
+}
+
+.BOXX p, #separator 
+{
+    color: #fdfdfd;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+}
+
+.BOXX img 
+{
+    width: 30px;
+    height: auto;
+}
+
+.input, .input_signin, .input_step2 
+{
+    width: 70%;
+    height: 7vh;
+    padding: 10px;
+    color: black;
+    border: 2px solid #EC5DC4;
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    background-color: rgb(247, 237, 247);
+}
+
+.input::placeholder, .input_signin::placeholder, .input_step2::placeholder 
+{
+    color: #918585;
+}
+
+.btn_sign
+{
+    width: 30%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 5px #EC5DC4;
+    background-color: #f554c7;
+    color: #f3edf3;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover 
+{
+    background-color: #b215d1;
+}
+
+#separator 
+{
+    text-align: center;
+}
+
+#separator:after 
+{
+    content: '';
+    display: inline-block;
+    width: 200%;
+    height: 1px;
+    background: #b215d1;
+    text-align: center;
+}
+
+#uploadimage 
+{
+    padding: 20px;
+    background-color: aqua;
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    border: #fff;
+    text-align: center;
+}
+
+#BoxError
+{
+    min-width: 40%;
+    max-width: 50%;
+    min-height: 10vh;
+    position: absolute;
+    background-color: #8b0108;
+    border: #0e0d0d;
+    box-shadow: 0px 0px 20px #8b0108;
+    bottom: 4%;
+    right: 2%;
+    line-height: 2;
+    display: flex;
+    border-radius: 2vw;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+#BoxError p
+{
+    color: aliceblue;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+    .WELCOME {
+        width: 30%;
+    }
+    .TO-PING-PONG {
+        width: 35%;
+    }
+    .GAME {
+        width: 18%;
+    }
+
+    .BOX {
+        width: 40vw;
+        padding: 30px;
+       
+    }
+
+    .input, .input_signin, .input_step2 {
+        width: 85%;     
+    }
+    button {
+        width: 35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    .WELCOME {
+        width: 30%;
+    }
+    .TO-PING-PONG {
+        width: 40%;
+    }
+    .GAME {
+        width: 20%;
+    }
+
+    .BOX {
+        width: 50vw;
+        padding: 30px;
+    }
+
+    .input, .input_signin, .input_step2 {
+        width: 80%;
+      
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) 
+{
+    .WELCOME {
+        width: 30%;
+    }
+    .TO-PING-PONG {
+        width: 60%;
+    }
+    .GAME {
+        width: 20%;
+    }
+
+    .BOX {
+        width: 60vw;
+        padding: 30px;
+    }
+
+    .input, .input_signin, .input_step2 {
+        width: 80%;
+      
+    }
+
+    button {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) 
+{
+    .WELCOME {
+        width: 60%;
+    }
+    .TO-PING-PONG {
+        width: 70%;
+    }
+    .GAME {
+        width: 30%;
+    }
+    .BOX {
+        width: 80vw;
+        padding: 30px;
+    }
+    .input, .input_signin, .input_step2 
+    {
+        width: 80%;
+    }
+    button 
+    {
+        width: 50%;
+    }
+}
+
+@keyframes light-border 
+{
+    0% 
+    {
+      box-shadow: 0px 0px 20px 10px rgba(240, 115, 219, 0.952), 
+                  0px 0px 0px 5px rgba(240, 115, 219, 0.952) inset;
+    }
+    25% 
+    {
+      box-shadow: 0px 0px 20px 10px rgba(231, 1, 193, 0.952), 
+                  0px 0px 0px 5px rgba(231, 1, 193, 0.952) inset;
+    }
+    50% 
+    {
+      box-shadow: 0px 0px 20px 10px rgba(3, 215, 243, 0.952), 
+                  0px 0px 0px 5px rgba(3, 215, 243, 0.952) inset;
+    }
+    75% 
+    {
+      box-shadow: 0px 0px 20px 10px rgba(123, 3, 236, 0.932), 
+                  0px 0px 0px 5px rgba(123, 3, 236, 0.932) inset;
+    }
+    100% 
+    {
+      box-shadow: 0px 0px 20px 10px rgba(8, 57, 192, 0.8), 
+                  0px 0px 0px 5px rgba(8, 57, 192, 0.8) inset;
+    }
+  }
+
+  #hiddinn 
+  {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    color: #000;
+
+}
+
+#hiddinn:hover 
+{
+    color: rgb(136, 127, 127);
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="profile-container">
+                <h2 id="language-title" style="color: rgb(148, 46, 243);">Choose Your Language</h2>
+                <select class="form-select" id="language" aria-label="Language selection">
+                    <option value="En">English</option>
+                    <option value="Fr">Français</option>
+                    <option value="Es">Spanish</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="profile-container">
+                <h2 id="settings-title" data-i18n="Edit_Profile_TITLE" style="color: rgb(148, 46, 243);">Edit Profile</h2>
+                <form id="settings-form" class="settings-form-container">
+                    <div class="mb-3">
+                        <label for="email" class="form-label" id="label-email" data-i18n="EMAIL">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" data-i18n_placeholder="email" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="profile-image" class="form-label" id="label-profile-image" data-i18n="PROFILE_IMAGE">Profile Image</label>
+                        <input type="file" class="form-control" id="profile-image">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nickname" class="form-label" id="label-nickname" data-i18n="NICKNAME">Nickname</label>
+                        <input type="text" class="form-control" id="nickname" placeholder="Enter your nickname" data-i18n_placeholder="NICKNAME" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label" id="label-first-name" data-i18n="FIRST_NAME">First Name</label>
+                        <input type="text" class="form-control" id="first_name" placeholder="Enter your first name" data-i18n_placeholder="FIRST_NAME" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label" id="label-last-name" data-i18n="LAST_NAME">Last Name</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Enter your last name" data-i18n_placeholder="LAST_NAME" >
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn-save-changes" data-i18n="SAVE_CHANGES">Save Changes</button>
+                </form>
+            </div>
+        </div>      
+    </div>
+</div>

@@ -1,0 +1,234 @@
+
+/* Game Arena */
+.game-box , .game-box_final{
+    display: none;
+    width: 70%;
+    height: 50vh;
+    margin: 20vh auto;
+    animation: light-border 5s infinite linear;
+    border-radius: 2vw;
+    background: rgba(128, 0, 128, 0.6);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Line */
+.center-line {
+    width: 0.2vw;
+    height: 65%;
+    background: #FF00F5;
+    box-shadow: 0 0 1.5vw #FF00F5;
+    position: absolute;
+}
+
+/* Character Style */
+.character {
+    position: absolute;
+    display: none;
+    right: 10vw;
+    bottom: 5vh;
+    height: 40vh;
+    z-index: 10;
+    /* transform: translate(0, 50%); */
+    /* transform: translateY(0); */
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3vh);
+    }
+}
+
+/* Style pour l'image WINNER */
+.winner {
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    height: 4vh; /* Réduit de 6vh à 4vh */
+    
+}
+
+/* Style pour l'image LOSER */
+.loser {
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    height: 4vh; /* Réduit de 6vh à 4vh */
+}
+
+/* Style pour le bouton Replay */
+.replay-button {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1vh 3vw;
+    background-color: #00FF00;
+    color: #ffffff;
+    font-size: 1.8vh;
+    font-weight: bold;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    box-shadow: 0 0 1vw #FF00F5;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effet hover pour le bouton */
+.replay-button:hover {
+    background-color: #FF00F5;
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* Nouveaux styles pour les cartes des joueurs */
+.player-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    padding: 3vh;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    min-with: 15vw;
+    top: 13vh;
+    
+}
+
+/* Style pour la carte du gagnant */
+.winner-card {
+    left: 10vw;
+    top: 25vh;
+}
+
+/* Style pour la carte du perdant */
+.loser-card {
+    right: 10vw;
+    top: 25vh;
+}
+
+.player-avatar {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    border: 2px solid #FF00F5;
+    box-shadow: 0 0 2vh #FF00F5;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.player-name_ {
+    font-size: 3vh;
+    color: #00FF00;;
+    font-weight: bold;
+}
+#loser-name, #winner-name
+{
+    color: #00FF00;;
+}
+.player-score {
+    font-size: 3.5vh;
+    color: #ffffff;
+}
+
+/* Styles communs pour les titres Winner et Loser */
+/* Styles communs pour les titres Winner et Loser */
+.section-title {
+    max-width: 50%; /* Ajustez la largeur maximale en fonction du design */
+    height: auto; /* Préserve le ratio de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    display: block; /* S'assure qu'elle se comporte comme un bloc */
+    position: relative; /* Nécessaire pour déplacer avec "top" ou "transform" */
+    top: -15vh; /* Déplace l'image vers le haut de 20px */
+    /* OU utiliser transform */
+    /* transform: translateY(-20px); */
+}
+
+
+
+
+
+.player-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-title {
+    width: 12vw;
+    height: auto;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.player-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-avatar {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.player-info {
+    text-align: left;
+    color: white;
+}
+
+.player-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF00;;
+}
+
+.player-Score_ {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffdd00;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.player-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif;
+}
+
+
+.replay-button:hover {
+    background: #ff00a5;
+    /* transform: scale(1.1); */
+}

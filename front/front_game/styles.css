@@ -1,0 +1,162 @@
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15vw;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF00F5;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.profile span {
+    position: absolute;
+    top: 1.5vh;
+    left: -5vw;
+    font-size: 1.8vh;
+    color: white;
+}
+
+.profile img {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* Hero Section Styles */
+/* .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: 6vh;
+} */
+
+.adventure-text {
+    margin-top: 9vh;
+    font-size: 5vh;
+    color: white;
+    text-shadow: 0.2vw 0.2vw 0.4vw #FF00F5;
+    text-align: center;
+}
+
+.game-title 
+{
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.game-title-image 
+{
+    width: 50vw;
+    height: auto;
+    text-align: center;
+}
+
+/* Container for Game Levels */
+
+/* Game Modes Section */
+.game-modes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    /* z-index: 3; */
+    /* top: -25vh; */
+}
+
+.game-mode-container {
+    /* position: relative; */
+    width: 25vw;
+    height: 30vh;
+    background-color: rgba(236, 93, 195, 0.425);
+    background:linear-gradient(90deg, rgba(236, 93, 195, 0.425), rgba(235, 67, 187, 0.425), rgba(231, 43, 178, 0.425));
+    /* border: 0.2vw solid #FF00F5; */
+    border-radius: 1.5vw;
+    /* box-shadow: 0.4vw 0.4vw 0.8vw #FF00F5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    animation: light-border 5s infinite linear, bounce 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.game-mode-container:hover {
+    transform: translateY(-1vh);
+}
+
+/* Game Mode Images */
+.game-mode-img {
+    width: 60%;
+    height: auto;
+    border-radius: 1vw;
+}
+.options_game
+{
+    color: azure;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    width: 80%;
+}
+/* Select Button Styles */
+.select-btn {
+    background: #00FF00;
+    position: relative;
+    border: 3px solid #0f0f0f;
+    border-radius: 2vw;
+    color: rgb(0, 0, 0);
+    padding: 2vh 4vw;
+    font-size: 2vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-btn:hover {
+    background: #FF00F5;
+}
+
+.character-box {
+    width: 25vw;
+    height: 35vh;
+    background-color: rgba(236, 93, 196, 0.24);
+    border: 0.2vw solid #FF00F5;
+    box-shadow: 0.4vw 0.4vw 0.8vw #FF00F5;
+    border-radius: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+    position: relative;
+    z-index: 3;
+}
+
+.character-box img {
+    max-width: 9.7vw;
+    height: auto;
+}

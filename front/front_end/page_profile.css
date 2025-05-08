@@ -1,0 +1,146 @@
+
+#history_match
+{
+  display: block;
+  width: 80%;
+  height: auto;
+  min-height: 40vh;
+  margin-left: 10%;
+  gap: 2vh;
+  margin-top: 8vh;
+}
+.history_match h1 
+{
+  font-size: 10em;
+  font-family: 'Orbitron', sans-serif;
+  margin: 40px 0;
+  color: #FF00F5;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.history-box {
+  width: 100%;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #1A1A72, #9c0797f1);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 0.9em;
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+  flex: 1;
+  text-align: center;
+}
+
+#content_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 6;
+  width: 100%;
+  height: 100%;
+}
+
+.nick_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.winner-img {
+  width: 32%; 
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #15ff00;
+  box-shadow: 2px 4px 10px #15ff00;
+}
+.losser-img {
+  width: 32%; 
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #fa0441ec;
+  box-shadow: 2px 4px 10px #fa0441ec;
+}
+.nickname {
+  font-size: 2em;
+  font-family: 'Bangers', cursive;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.match-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  height: 100%;
+}
+
+#winner, #loser {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+#winner {
+  color: #30e20c;
+} 
+#loser {
+  color: #f01616;
+} 
+#score_winner {
+  font-size: 2em; 
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+
+  color: #30e20c;
+}
+#score_loser {
+  font-size: 2em; 
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+  color: #f01616;
+}
+.emoji {
+  font-size: 2em; 
+}
+.no-history {
+  width: 50vw;
+  font-weight: bold;
+  color: #eaf3ea; 
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  text-transform: uppercase; text-shadow: 0px 0px 3px #11dd0a;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+

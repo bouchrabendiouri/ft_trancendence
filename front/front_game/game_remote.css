@@ -1,0 +1,305 @@
+/* game.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('back22.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+/* Header and Navbar */
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2vh 4vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 3vh;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15vw;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF00F5;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.profile span {
+    position: absolute;
+    top: 1.5vh;
+    left: -5vw;
+    font-size: 1.8vh;
+    color: white;
+}
+
+.profile img {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* Box design */
+.side-box {
+    position: absolute;
+    top: 13vh;
+    left: 3vw;
+    width: 20vw;
+    height: 80vh;
+    background: rgba(255, 0, 255, 0.2);
+    border: 0.2vw solid #FF00F5;
+    border-radius: 1vw;
+    box-shadow: 0 0 1.5vw #FF00F5;
+    padding: 1vh;
+    overflow-y: auto;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 1vh;
+    padding: 1vh;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player:hover {
+    transform: translateY(-0.5vh);
+    box-shadow: 0 0 1vw rgba(255, 255, 255, 0.5);
+}
+
+.player img {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.player-name {
+    font-size: 1.5vh;
+    font-weight: bold;
+    color: white;
+}
+
+.player-fullname {
+    font-size: 1.2vh;
+    color: rgb(255, 255, 255);
+}
+
+.play-button {
+    background: #00FF00;
+    border: none;
+    color: white;
+    padding: 0.5vh 1.5vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.play-button:hover {
+    background: #e600e0;
+}
+
+.ping-pong-table_remote {
+    filter: blur(2px);
+    position: absolute;
+    top: 4vh;
+    left: 25vw;
+    width: 72vw;
+    height: 80vh;
+    background: rgba(236, 93, 195, 0.192);
+    border: 0.2vw solid #FF00F5;
+    border-radius: 1vw;
+    box-shadow: 0 0 1.5vw #FF00F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Conteneur du bouton */
+.button-container {
+    position: absolute;
+    top: 52%;
+    left: 56%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 10;
+    filter: none;
+    pointer-events: none;
+}
+
+/* Bouton */
+#createGameButton {
+    position: relative;
+    z-index: 20; 
+    background: #FF00F5;
+    border: none;
+    color: white;
+    padding: 0.7vh 1.9vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: background 0.3s ease;
+}
+
+#createGameButton:hover {
+    background: #00FF00;
+}
+
+
+
+/* Net */
+.net {
+    position: absolute;
+    width: 0.2vw;
+    height: 100%;
+    background: #FF00F5;
+}
+
+/* Paddles */
+.paddle {
+    position: absolute;
+    width: 0.5vw;
+    height: 10vh;
+    background: #FF00F5;
+    border-radius: 0.5vw;
+}
+
+.left-paddle {
+    left: 2vw;
+}
+
+.right-paddle {
+    right: 2vw;
+}
+
+/* Ball */
+.ball {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 1vw #ff00f7;
+}
+
+.modal-general_ {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ENTERZ_SCORE {
+    background-color: #1e1e2f;
+    left: 10vh;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
+    width: 30vw;
+    box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    border: 0.2vw solid #ff00f5;
+    box-shadow: 0 0 1.5vw #FF00F5;
+}
+
+.ENTERZ_SCORE h2 {
+    margin-bottom: 1vh;
+    font-size: 2.4vh;
+    color: #fff;
+}
+
+.ENTERZ_SCORE p {
+    font-size: 1.6vh;
+    color: #aaa;
+    margin-bottom: 2vh;
+}
+
+.ENTERZ_SCORE input {
+    width: 80%;
+    padding: 1vh;
+    font-size: 1.6vh;
+    margin-bottom: 1.5vh;
+    border: 0.1vw solid #555;
+    border-radius: 0.6vw;
+    background: #2d2d3f;
+    color: #fff;
+}
+
+.ENTERZ_SCORE button {
+    padding: 1vh 2vw;
+    font-size: 1.6vh;
+    color: #fff;
+    border: none;
+    border-radius: 0.6vw;
+    cursor: pointer;
+    margin: 0.5vh;
+    transition: background-color 0.3s ease;
+}
+
+.ENTERZ_SCORE button#confirmScore {
+    background-color: #ff00f5;
+}
+
+.ENTERZ_SCORE button#confirmScore:hover {
+    background-color: #00FF00;
+}
+
+.ENTERZ_SCORE button.cancel-button {
+    background-color: #6c757d;
+}
+
+.ENTERZ_SCORE button.cancel-button:hover {
+    background-color: #ff00f5;
+}
+

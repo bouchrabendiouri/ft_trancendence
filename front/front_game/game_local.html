@@ -1,0 +1,61 @@
+
+<!-- Player Boxes -->
+
+
+        <!-- Player Boxes -->
+        <div class="player-boxes">
+            <div class="player-box" id="player1">
+                <img src="player1.png" alt="Player 1 Avatar" class="player-avatar">
+                <span class="player-name" data-i18n="player1">PLAYER 1</span>
+            </div>
+            <img src="vs.png" alt="VS" class="vs-image">
+            <div class="player-box" id="player2">
+                <img src="player2.png" alt="Player 2 Avatar" class="player-avatar">
+                <span class="player-name" data-i18n="player2">PLAYER 2</span>
+            </div>
+        </div>
+            <!-- Ping Pong Table -->
+             <div id="container_table">
+            <div class="ping-pong-table">
+                <div class="net"></div>
+                <div class="paddle left-paddle"></div>
+                <div class="paddle right-paddle"></div>
+                <div class="ball"></div>
+                <div id="countdown" class="countdown hidden">5</div>
+                <div class="score_game">
+                    <span id="scorePlayer1">0</span> - <span id="scorePlayer2">0</span>
+                </div>
+                <div id="gameOver" class="game-over hidden">Game Over</div>
+                <button id="startButton" class="play-button" data-i18n="play_button">Play</button>
+            </div>
+
+            <div class="game-box">
+                <div class="player-section">
+                    <img src="winner.png" alt="Winner" class="section-title">
+                    <div class="player-card">
+                        <img id="winner-avatar" class="player-avatar" src="" alt="Winner Avatar">
+                        <div class="player-info">
+                            <div id="winner-name" class="player-name_"></div>
+                            <span   class="player-Score_" data-i18n="player-score">SCORE</span>
+                            <div id="winner-score" class="player-score"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="center-line"></div>
+        
+                <div class="player-section">
+                    <img src="loser.png" alt="Loser" class="section-title">
+                    <div class="player-card">
+                        <img id="loser-avatar" class="player-avatar" src="" alt="Loser Avatar">
+                        <div class="player-info">
+                            <div id="loser-name" class="player-name_"></div>
+                            <span data-i18n="player-score"  class="player-Score_">SCORE</span>
+                            <span id="loser-score" class="player-score"></span>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="navigateTo('/game')" id="replayButton" class="replay-button" data-i18n="back_home" >Back to Home</button>
+            </div>
+            <img src="character2.png" alt="Character" class="character">
+        </div>

@@ -1,0 +1,37 @@
+
+<div class="adventure-text" data-i18n="start_adventure">Start Your Adventure... in</div>
+<div class="game-title">
+    <img src="pingpong_game.png" data-i18n= "img_ping_pong" alt="PING PONG GAME!" class="game-title-image">
+</div>
+ <!-- </main> -->
+<div class="game-modes">
+    <div class="game-mode-container">
+        <h5 data-i18n="game_local" 
+style="font-family: 'Press Start 2P', sans-serif; text-decoration: none; color: #e9e3e3; text-transform: uppercase; text-shadow: 4px 4px 0px #1A1A72, 6px 6px 4px rgba(0, 0, 0, 0.5);">
+GAME LOCAL
+</h5>
+        <p class="options_game" data-i18n="local_game_desc">Play against a friend on the same device. A fun way to compete in person!</p>
+        <button class="select-btn" data-route="/game_local" onclick="loadPage('/game_local')" data-i18n="play_button">PLAY</button>
+    </div>
+<!-- <div class="character-box">
+        <img src="character.png" alt="Game Character">
+    </div> -->
+    <div class="game-mode-container">
+        <h5 data-i18n="game_tournament" 
+style="font-family: 'Press Start 2P', sans-serif; text-decoration: none; color: #e9e3e3; text-transform: uppercase; text-shadow: 4px 4px 0px #1A1A72, 6px 6px 4px rgba(0, 0, 0, 0.5);">
+GAME TOURNAMENT
+</h5>
+        
+        <p class="options_game" data-i18n="tournament_desc">Battle through multiple matches to become the ultimate champion!</p>
+        <button class="select-btn" data-route="/tournament" onclick="loadPage('/tournament')" data-i18n="play_button">PLAY</button>
+    </div>
+
+    <div class="game-mode-container">
+        <h5 data-i18n="game_remote" 
+        style="font-family: 'Press Start 2P', sans-serif; text-decoration: none; color: #e9e3e3; text-transform: uppercase; text-shadow: 4px 4px 0px #1A1A72, 6px 6px 4px rgba(0, 0, 0, 0.5);">
+        GAME REMOTE
+    </h5>
+        <p class="options_game" data-i18n="online_game_desc">Play online and compete against players worldwide in real-time!</p>
+        <button class="select-btn" onclick="loadPage('/game_remote')" data-i18n="play_button">PLAY</button>
+    </div>
+</div>

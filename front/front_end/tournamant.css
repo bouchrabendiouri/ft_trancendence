@@ -1,0 +1,176 @@
+#div_tournament
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+}
+
+#cup_div
+{
+    position: relative;
+}
+
+#cup
+{
+    width: 27vw;
+    height: auto;
+    margin-top: 25%;
+
+}
+        .input-container 
+        {
+            position: absolute;
+            width: 20%;
+            padding: 20px;
+            color: #FFCC00;
+            background: rgba(218, 87, 238, 0.726);
+            border-radius: 10px;
+            text-align: center;
+            height: auto;
+            font-family: 'Press Start 2P', monospace;
+           
+        }
+        #player1-container 
+        {
+            top: 25%;
+            left: 12%;
+            border: 4px solid #FF00F5;
+            box-shadow: 0 0 30px #FF00F5;
+        }
+        #player2-container
+        {
+            top: 60%;
+            right:12%;
+            border: 4px solid #00FF00;
+            box-shadow: 0 0 30px #00FF00;
+        }
+        
+        #player3-container 
+        {
+            top: 25%;
+            right: 12%;
+            border: 4px solid #FF00F5;
+            box-shadow: 0 0 30px #FF00F5;
+          
+        }
+        #player4-container 
+        {
+            top: 60%;
+            left: 12%;
+            border: 4px solid #00FF00;
+            box-shadow: 0 0 30px #00FF00;
+        }
+        .input-container label 
+        {
+            margin-bottom: 5px;
+            display: block;
+            color: #FFCC00;
+        }
+        .input-container input 
+        {
+            padding: 10px;
+            font-size: 1em;
+            width: 90%;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 7px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #start_tournament
+        {
+            background-color: #b409ca;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            position: absolute;
+             top: 50%;
+             left: 35%;
+
+          
+        }
+        button:hover {
+            background-color: #e000d1;
+        }
+
+        #warning {
+            color: red;
+            margin-top: 20px;
+            display: none;
+        }
+        #matches_DIV
+        {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.582);
+        }
+        #matches
+        {
+            display: none;
+            width: 55vw;
+            height: auto;
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            background-color: rgb(180, 178, 177);
+            text-align: center;
+            z-index: 3;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .match
+        {
+            width: 96%;
+            height: 10vh;
+            margin-left: 2%;
+            margin-right: 2%;
+            border: #836904;
+            background-color: linear-gradient(135deg, #f5cb10, #e69e18f1, #f08f35f1);
+            background-color: #f5cb10;
+            font-family: 'Press Start 2P', monospace;
+            border-radius: 20px;
+            display: flex;
+            color: rgb(5, 18, 189);
+            justify-content: space-around;
+            align-items: center;
+        }
+        #start_match
+        {
+             color: #e000d1;
+             padding: 20px;
+             width: 70%;
+             color: aliceblue;
+             border-radius: 30px;
+             font-size: larger;
+             font-family: 'Press Start 2P', monospace;
+        }
+        #match_id
+        {
+            color: aliceblue;
+            font-size: larger;
+
+        }
+        #vs_img
+        {
+            width: 25%;
+        }
+        #players_match
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 5px;
+        }

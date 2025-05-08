@@ -1,0 +1,89 @@
+services:
+  my-postgres:
+    image: postgres
+    container_name: my-postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork
+    env_file:
+      - .env  # Load environment variables from .env file
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build: ./game_usermanagmenttt/myproject/
+    volumes:
+      - ./game_usermanagmenttt/myproject:/app
+      - ./game_usermanagmenttt/myproject/media:/app/media
+    container_name: django
+    ports:
+      - "8000:8000"
+    networks:
+      - mynetwork
+    env_file:
+      - .env
+    depends_on:
+      my-postgres:
+        condition: service_healthy
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+
+  nginx:
+    build:
+      context: ./front/
+      args:
+        CN: ${CN}
+    container_name: nginx
+    env_file:
+      - .env 
+    volumes:
+      - ./game_usermanagmenttt/myproject/media:/usr/share/nginx/html/media
+    ports:
+      - "3000:80"
+      - "8443:443"
+    depends_on:
+      - web
+    networks:
+      - mynetwork
+
+
+  chat-db:
+    image: postgres
+    container_name: chat-db
+    ports:
+      - "5433:5432"
+    networks:
+      - mynetwork
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_CHAT_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_CHAT_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_CHAT_DB}
+
+  chat:
+    image: django-docker:0.0.1
+    container_name: chat
+    build: ./chat/chatDir/
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    depends_on:
+      - chat-db
+    networks:
+      - mynetwork
+      
+networks:
+  mynetwork:
+    driver: bridge

@@ -1,0 +1,76 @@
+#hiddinn 
+{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  color: #000;
+
+}
+
+#hiddinn:hover 
+{
+  color: rgb(136, 127, 127);
+  cursor: pointer;
+}
+#BoxError
+{
+    min-width: 40%;
+    max-width: 50%;
+    min-height: 10vh;
+    position: absolute;
+    background-color: #8b0108;
+    border: #0e0d0d;
+    box-shadow: 0px 0px 20px #8b0108;
+    bottom: 4%;
+    right: 2%;
+    line-height: 2;
+    display: flex;
+    border-radius: 2vw;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+#BoxError p
+{
+    color: aliceblue;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+}
+/* 
+function Display_Error(error_mssg) 
+{
+    let errorBox = document.getElementById("BoxError");
+    if (!errorBox) {
+        errorBox = document.createElement('div');
+        errorBox.id = "BoxError";
+        document.getElementById('divv').appendChild(errorBox);
+    }
+    else
+        errorBox.style.display = 'block';
+        if (!document.querySelector('#BoxError .hiddin')) {
+            const closeButton = document.createElement('span');
+            closeButton.classList = "hiddin";
+            closeButton.id = "hiddinn";
+            closeButton.innerHTML = "&times;";
+            closeButton.addEventListener('click', () => {
+                errorBox.style.display = 'none';
+            });
+            errorBox.appendChild(closeButton);
+        } 
+    if (!document.getElementById('message_error'))
+    {
+        const mssg = document.createElement('p');
+        mssg.id = "message_error";
+        mssg.textContent = error_mssg;
+        errorBox.appendChild(mssg);
+    }
+} */

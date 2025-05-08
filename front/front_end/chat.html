@@ -1,0 +1,46 @@
+
+<div class="chat-container">
+    <div class="chat-sidebar">
+        <p class="disc">Discussions</p>
+        <div id="friend-list" class="friend-list">
+            <!-- Contacts will be dynamically loaded here -->
+        </div>
+
+        <div id="game-warnings" class="game-warnings-container">
+            <!-- Game warnings will be dynamically loaded here -->
+        </div>
+    </div>
+    <div class="chat-main">
+        <div class="chat-header" id="chatHeader">
+            <h2 class="select-contact" id="active-contact-name">Select a contact</h2>
+        </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+        <!-- Messages will be dynamically appended here -->
+    </div>
+    <div class="Message">
+        <input placeholder="Message.." class="MsgInput" type="text" id="message-input" autocomplete="off">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="30.000000pt" height="30.000000pt" viewBox="0 0 30.000000 30.000000" preserveAspectRatio="xMidYMid meet" class="SendSVG" id="send-btn">
+            <g transform="translate(0.000000,30.000000) scale(0.100000,-0.100000)" fill="#ffffff70" stroke="none">
+                <path d="M44 256 c-3 -8 -4 -29 -2 -48 3 -31 5 -33 56 -42 28 -5 52 -13 52 -16 0 -3 -24 -11 -52 -16 -52 -9 -53 -9 -56 -48 -2 -21 1 -43 6 -48 10 -10 232 97 232 112 0 7 -211 120 -224 120 -4 0 -9 -6 -12 -14z"></path>
+            </g>
+        </svg>
+    </div>
+    <div class="chat-profile" id="chatProfile">
+        <div class="profile-section" id="profileSection">
+            <!-- Profile info will be populated dynamically -->
+        </div>
+        <div id="notification-container" class="notification-container"></div>
+        <!-- Buttons for Play and Block -->
+        <div class="profile-buttons">
+        </div>
+    </div>
+   
+    <div id="Accept_warning">
+    <h2 style="color: #00010a; text-decoration: none; ">Please join the game created by this player !</h2>
+    <button onclick="navigateTo('/game_remote')" id="Accept_warning_button" data-i18n="join" >JOIN</button>
+
+</div>
+</div>
+</div>
+</div>
